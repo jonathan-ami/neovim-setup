@@ -15,6 +15,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
+myfuncs.setTheme('gruvbox','dark')
 
--- Keybinds
-vim.api.nvim_set_keymap('n', '<F5>', ':lua myfuncs.switchTheme("gruvbox","dark")<CR>', {noremap = true, silent = true})
